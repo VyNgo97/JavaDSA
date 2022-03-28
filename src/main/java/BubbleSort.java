@@ -1,5 +1,4 @@
 import java.util.Arrays;
-import java.util.stream.*;
 public class BubbleSort {
     public static void main(String[] args) {
         int[] intArray = new int[7];
@@ -19,6 +18,7 @@ public class BubbleSort {
 
         while (unsortedPartitionIndex > 0) {
             for (int i = 0; i < unsortedPartitionIndex; i++) {
+                // this sort because unstable if we do >= here. see notes for details
                 if (arr[i] > arr[i+1]) {
                     int temp = arr[i];
                     arr[i] = arr[i+1];
