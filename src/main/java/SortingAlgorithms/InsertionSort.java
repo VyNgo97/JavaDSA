@@ -1,10 +1,12 @@
+package SortingAlgorithms;
+
 import java.util.Arrays;
 public class InsertionSort {
 
     public static void main(String[] args) {
         int[] intArray = {20, 35, -15, 7, 55, 1, -22};
         int[] res = insertionSort(intArray);
-//        Arrays.stream(res).forEach(s -> System.out.println(s));
+//        DataStructures.Arrays.stream(res).forEach(s -> System.out.println(s));
     }
 
     public static int[] insertionSort(int[] arr) {
