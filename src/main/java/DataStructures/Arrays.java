@@ -1,4 +1,5 @@
-package DataStructures;
+package main.java.DataStructures;
+
 
 public class Arrays {
     public static void main(String[] args) {
@@ -21,6 +22,12 @@ public class Arrays {
             }
         }
         System.out.println(index);
+
+        //TODO: Move this to relevant spot but you can implicitly cast a char to its ascii representation like below. Used in valid anagram problem.
+        int[] charArr = new int[256];
+        String word = "apple";
+        charArr[97] = 1;
+        System.out.println(charArr[word.charAt(0)]);
     }
 
 }
