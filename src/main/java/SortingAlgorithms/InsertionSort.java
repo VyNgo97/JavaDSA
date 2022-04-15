@@ -1,4 +1,4 @@
-package SortingAlgorithms;
+package main.java.SortingAlgorithms;
 
 import java.util.Arrays;
 public class InsertionSort {
@@ -15,6 +15,7 @@ public class InsertionSort {
         * 1. compare arr[i] vs. arr[i-1]
         *   a. if arr[i] > arr[i-1]: increment sortedIndex and i
         *   b. if arr[1] < arr[i-1]: swap the elements and keep comparing until condition a. is met
+        * The above solution can be changed so that instead of all the swaps, we can shift the array.
         * */
         int sortedIndex = 0;
         for (int i = 1; i < arr.length; i++) {
